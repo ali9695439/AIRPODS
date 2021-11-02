@@ -1,0 +1,247 @@
+@import 'font.css';
+*{
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    min-height: 40px;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* border: red 2px solid; */
+}
+.header{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: #282828;
+}
+.navbar{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar_list{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case img{
+    width: 100px;
+    height: 53px;
+    object-fit: contain;
+}
+.navbar_list a{
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.navbar_vector{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.header_content{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-img{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.header-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header_content--text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.header_content--text h1{
+    color: white;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 75px;
+    font-family: 'prosto one';
+}
+.header_content--text button{
+    padding: 13px;
+    border-radius: 8px;
+}
+.header_content--text button img{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+.header_content--text button a{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.center{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #151515;
+    padding-top: 30px;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.center p{
+    width: 50%;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+.center-1,
+.center-2,
+.center-3,
+.center-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.center-1 img{
+    width: 50%;
+    height: 335px;
+    object-fit: cover;
+}
+.center-2 img{
+    width: 50%;
+    min-height: 400px;
+    object-fit: contain;
+}
+.center-3 img{
+    width: 20%;
+    height: 375px;
+    object-fit: contain;
+}
+
+.item{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 7px;
+}
+.item h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.item img{
+    width: 127px;
+    height: 167px;
+    object-fit: contain;
+}
+.item p{
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.item button{
+    padding: 7px 57px;
+    background: #151515;
+}
+.item button a{
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.footer{
+    width: 100%;
+    background: #282828;
+    padding-top: 20px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+@media(max-width:992px){
+   
+}
+@media(max-width:768px){
+    .navbar_list a{
+        display: none;
+    }
+    .header_content--text h1{
+        font-size: 60px;
+        line-height: 45px;
+    }
+    .center-1,
+    .center-2,
+    .center-3{
+    display: flex;
+    flex-direction: column;
+}
+.center-1 img,
+.center-2 img{
+    width: 80%;
+}
+.center-3 img{
+    width: 50%;
+}
+.center-4{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    width: 50%;
+}
+}
+@media(max-width:480px){
+    .header_content--text h1{
+        font-size: 40px;
+        line-height: 25px;
+    }
+    .center-1 img,
+.center-2 img{
+    width: 100%;
+}
+.center-3 img{
+    width: 80%;
+}
+.item{
+    width: 80%;
+}
+.footer-vector{
+    width: 100%;
+}
+}
